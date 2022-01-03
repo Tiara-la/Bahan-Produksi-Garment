@@ -1,0 +1,143 @@
+.badge {
+    margin-left: 3px;
+}
+.body {
+    color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(238, 206, 25);
+    
+
+}
+
+.navbar-brand {
+font-family: Fjalla One, sans-serif;
+font-size: 32px;
+}
+
+.nav-link {
+    margin-right: 30px;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background-color: rgb(238, 206, 25);
+    background-size: cover;
+    height: 300px;
+    text-align:center;
+    position: relative;
+
+}
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    position: absolute;
+    bottom: 0;
+
+
+}
+.jumbotron .display-4 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+    
+}
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    margin-top: -20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.info-panel img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.info-panel h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.info-panel h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+/* .info-panel p {
+    font-size: 16px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+} */
+/* Utility */
+.tombol {
+    border-radius: 40px;
+}
+.breadcrumb {
+    margin-top: 1rem;
+    margin-left: -2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+.container-fluid {
+    margin-left: 1rem;
+    
+}
+.table {
+   color: #000 ;
+}
+.fa-box-open {
+    margin-right: 10px;
+}
+
+
+
+/* DEKSTOP */
+@media (min-width: 992px) {
+    
+    .nav-link:hover:after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+
+    }
+    .jumbotron {
+        margin-top: -75px;
+        height: 360px;
+    }
+    .jumbotron .display-4 {
+        font-size: 55px;
+        margin-top: 100px;
+    }
+
+
+}
